@@ -18,3 +18,14 @@ body{
     background-color: #ccc;
 }
     /*End of Common styles*/
+
+/* Menu */
+.menu{
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+    position:fixed;
+    top: 2rem;
+    left: 2rem;
+}
+/* End of Menu */
