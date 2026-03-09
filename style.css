@@ -26,6 +26,18 @@ body{
     background-color: red;
     position:fixed;
     top: 2rem;
-    left: 2rem;
+    left: 15vw;
+    z-index: 10;
 }
 /* End of Menu */
+
+/* Navbar */
+.navbar{
+    width: 15vw;
+    height: 100vh;
+    background-color: #fff;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+/* End of Navbar */
