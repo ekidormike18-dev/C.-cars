@@ -26,9 +26,10 @@ body{
     height: 4rem;
     background-color: red;
     position:fixed;
-    top: 2rem;
+    top: 2rem;  
     left: 2rem;
     z-index: 10;
+    transition: left o.5s;
 }
 /* End of Menu */
 .menu.change{
@@ -43,11 +44,13 @@ body{
     background-color: #fff;
     position:fixed;
     top: 0;
-    left: 15vw;
+    left: -15vw;
     display: flex;
     flex-direction: column;
     padding: 4rem 0 0 4rem;
     z-index: 10;
+    transition: left o.5s;
+
 }
 .navbar.change{
     left: 0;
@@ -69,6 +72,7 @@ section{
     margin-bottom: 3rem;
     transform-origin: left;
     box-shadow: 0.5rem 0.5rem 1rem #aaa;
+    transition: left 0.5s,transform 0.5s;
 }
 
 section.change{
