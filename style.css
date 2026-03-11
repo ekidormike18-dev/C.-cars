@@ -37,7 +37,7 @@ body{
     z-index: 10;
     flex-direction: column;
     cursor: pointer;
-    transition: all o.5s;
+    transition: all 0.5s;
 }
 
 .menu.change{
@@ -74,7 +74,7 @@ body{
     flex-direction: column;
     padding: 4rem 0 0 4rem;
     z-index: 10;
-    transition: left o.5s;
+    transition: left 0.5s;
 
 }
 .navbar.change{
@@ -127,7 +127,8 @@ section.change{
     margin-bottom: 10rem;
     letter-spacing: 1rem;
     text-align: center;
-    text-shadow: 0.3rem 0.3rem 0.5rem #bbb;
+    text-shadow: 0.3rem 0.3rem 0.5rem #555;
+    transition: color 0.3s ease;
 }
 /* End of common section styles */
 
@@ -139,29 +140,33 @@ section.change{
 }
 
 .section-1 .section-heading{
-    color: #fff;
-    text-shadow: 1rem 1rem 1rem #000, 2rem 2rem 2rem #111, 3rem 3rem 3rem #222;
-}
-
-.section-1 .section-1-heading{
     margin-bottom: 3rem;
     text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1rem 1rem 1rem #000,2rem 2rem 2rem #111,3rem 3rem 3rem #222;
 }
 
+.section-3 .section-heading{
+    color: #fff;
+    text-shadow: 0.3rem 0.3rem 0.5rem #000;
+}
+
+
 .section-1-img{
-    width: min(70%, 110rem);
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 70%;
+    
 }
 /* End of section-1 */
 
-/* Popular Cars (section-2) */
+/* section-2 */
 .section-2{
-    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.cards-wrapper{
+
+.wrapper{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -171,18 +176,81 @@ section.change{
 }
 
 .card{
-    width: 32rem;
+    width: 50rem;
+    margin: 0.3rem;
     background-color: #fff;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    border-radius: 1rem;
-    padding: 2.5rem 2.5rem 3rem;
-    text-align: center;
+    padding: 1rem;
+    box-shadow: 0.6rem 0.6rem 0.6rem #bbb;
+    position: relative;
+    transition: box-shadow 0.5s;
+}
+.card:hover{
+    box-shadow: 0.8rem 0.8rem 0.8rem #bbb;
+}
+
+.car-name{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+
 }
 
 .card-img{
     width: 100%;
-    max-width: 28rem;
-    height: auto;
-    display: block;
-    margin: 2rem auto;
+    opacity: .8;
+    transition: opacity 0.5s;
 }
+
+.card:hover .card-img{
+ opacity: 1;
+}
+
+.car-price{
+    font-size: 1.8rem;
+    color: #777;
+    margin: 0.5rem 0;
+}
+
+.card-btn{
+    width: 100%;
+    background-color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.3rem #000;
+    box-shadow: 0.1rem 0.1rem 0.5rem #bbb;
+    cursor: pointer;
+}
+/*End of Section 2*/
+
+/*Section 3*/
+.section-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:#222  ;
+}
+
+.video{
+    width: 25%;
+    margin: 0 2rem;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    box-shadow: 0.3rem 0.3rem 0.5rem #111;
+    transition: all 0.5s;
+}
+
+.video:hover{
+    opacity: 1;
+    box-shadow: 0.5rem 0.5rem 1rem #111;
+}
+/*End of Section 3*/
